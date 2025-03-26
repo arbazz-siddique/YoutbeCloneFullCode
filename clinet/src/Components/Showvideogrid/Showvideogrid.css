@@ -1,0 +1,37 @@
+.Container_ShowVideoGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ✅ Centers the videos */
+    gap: 1rem; /* ✅ Adds spacing between videos */
+    padding: 1rem;
+    margin-top: 3rem; /* ✅ Ensures it doesn't overlap with navbar */
+    
+}
+
+.video_box_app {
+    width: 320px; /* ✅ Adjust this based on your video thumbnail size */
+    background-color: #181818;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.video_box_app:hover {
+    transform: scale(1.05); /* ✅ Adds a hover effect */
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 1024px) {
+    .video_box_app {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Container_ShowVideoGrid {
+        justify-content: center;
+    }
+    .video_box_app {
+        width: 100%; /* ✅ Full width on smaller screens */
+    }
+}

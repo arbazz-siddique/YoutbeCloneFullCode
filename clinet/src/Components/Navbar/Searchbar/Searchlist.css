@@ -1,0 +1,86 @@
+/* Searchlist.css */
+
+/* Container Styles */
+.Container_SearchList {
+    background-color: #1a1a1a;  /* Dark background for better contrast */
+    width: 90.75%;
+    position: absolute;
+    top: 2.7rem;
+    height: auto;
+    z-index: 91;
+    border-radius: 5px;
+    overflow-y: auto;
+    max-height: 250px;  /* Prevents excessive height */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Item Styles */
+.titleItem {
+    margin: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #ddd;
+    transition: background 0.3s ease-in-out;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.titleItem:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+
+/* Hover Effect */
+.titleItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Search Icon */
+.titleItem svg {
+    margin-right: 10px;
+    color: #aaa;
+    transition: color 0.3s ease-in-out;
+}
+
+.titleItem:hover svg {
+    color: #fff;
+}
+
+/* Scrollbar Styling */
+.Container_SearchList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.Container_SearchList::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 3px;
+}
+
+.Container_SearchList::-webkit-scrollbar-track {
+    background: #222;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .Container_SearchList {
+        max-height: 150px;
+        font-size: 13px;
+    }
+
+    .titleItem {
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Container_SearchList {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .titleItem {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

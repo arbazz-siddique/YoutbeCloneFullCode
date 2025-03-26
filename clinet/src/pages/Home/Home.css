@@ -1,0 +1,37 @@
+/* Home.css */
+.navigation_Home {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    position: fixed;  /* ✅ Keeps it visible when scrolling */
+    top: 5rem;     /* ✅ Pushes it below the navbar */
+    left: 4.7rem;       /* ✅ Aligns with sidebar */
+    right: 0;         /* ✅ Extends to the right */
+    /* z-index: 100;     ✅ Keeps it above other elements */
+    display: flex;
+    overflow-x: auto;
+    padding: 0.5rem 1rem;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.27);
+    white-space: nowrap; /* ✅ Prevents buttons from breaking into multiple lines */
+}
+
+.btn_nav_home {
+    background-color: rgb(46, 46, 46);
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 45px;
+    cursor: pointer;
+    flex-shrink: 0; /* ✅ Prevents buttons from shrinking */
+}
+
+.btn_nav_home:hover {
+    background-color: rgb(128, 128, 128);
+}
+
+.container_2_Pages_App {
+    margin-top: 6rem; /* ✅ Pushes content down so it's not hidden under the navbar + navlist */
+    padding: 1rem;
+    
+}
+.container_Pages_App{
+    background-color: #212121;
+}

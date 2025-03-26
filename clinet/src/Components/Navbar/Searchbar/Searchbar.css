@@ -1,0 +1,80 @@
+/* Searchbar.css */
+
+.SearchBar_Container {
+    margin: auto;
+    flex-grow: 2;
+    display: flex;
+    height: 2rem;
+   
+}
+
+.SearchBar_Container2 {
+    margin: auto;
+    
+}
+
+.search_div {
+    display: flex;
+    margin: auto;
+    position: relative;
+    z-index: 91;
+
+}
+.iBox_SearchBar {
+    background-color: rgb(18, 18, 18);
+    width: 30rem;
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    color: white;
+    font-size: large;
+    padding: 0.2rem;
+    height: 2rem;
+    padding-left: 2rem;
+    margin-top: 0%;
+  }
+
+
+.iBox_SearchBar::placeholder {
+    color: gray;
+}
+.serachIcon_SearchBar{
+    cursor: pointer;
+    padding: 0.75rem;
+    width: 2rem;
+    border-radius: 0.1rem;
+    background-color: rgb(78, 78, 78);
+    color: aliceblue;
+}
+
+
+.serachIcon_SearchBar:hover {
+    background-color: rgb(71, 71, 71);
+}
+.Mic_SearchBar{
+    border-radius: 100%;
+    padding: 0.5rem;
+    background-color: rgb(51, 51, 51);
+}
+
+
+
+.Mic_SearchBar:hover {
+    background-color: lightblue;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .iBox_SearchBar {
+        width: 15rem;
+        font-size: 0.9rem;
+    }
+
+    .search_div {
+        padding: 5px;
+    }
+}
+ 
+.vid_bell_Navbar,
+.Mic_SearchBar{
+      color: whitesmoke;
+      margin: auto 0.7rem;
+  }
